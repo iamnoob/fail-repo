@@ -7,9 +7,10 @@ $name3=$_POST['name3'];
 $a = $name1+$name2;
 $b = $name1-$name2;
 $c = $name1*$name2;
-$d = $name1/$name2;
+if($name2 == 0)
+$d = "Нельзя делить на ноль.";
+else $d =$name1/$name2;
 
-if()
 switch($name3){
     case "+":
         echo "Результат = " . $a;
