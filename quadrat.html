@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Square</title>
+    <style>
+        #square{
+            width: 100px;
+            height: 100px;
+            background: #000;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+        }
+    </style>
+</head>
+<body>
+<script>
+    window.onload = function(e){
+        var square = document.getElementById('square');
+
+        square.onclick = function(e){
+            square.style.height = '200px';
+            square.style.width = '200px';
+        };
+    }
+</script>
+    <div id="square"></div>
+</body>
+</html>
